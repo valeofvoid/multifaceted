@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "multifaceted",
+	"version": "${version}",
+	"name": "Multifaceted",
+	"description": "New ores, alloy making, gem infusion, and more!",
+	"authors": [
+		"valeofvoid"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/multifaceted/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"vale.multifaceted.Multifaceted"
+		],
+		"client": [
+			"vale.multifaceted.MultifacetedClient"
+		],
+		"fabric-datagen": [
+			"vale.multifaceted.MultifacetedDataGenerator"
+		]
+	},
+	"mixins": [
+		"multifaceted.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
